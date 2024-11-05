@@ -1,0 +1,91 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    font-family: 'Arial', cursive;
+    background-color: #15151b;
+    color: #ccc;
+}
+
+
+#chatContainer {
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid #282838;
+    padding: 10px;
+    overflow-y: auto;
+    border-radius: 10px;
+    box-shadow: 4px 13px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* Style for the input fields */
+input[type="text"], input[type="file"] {
+    margin-bottom: 10px;
+    width: calc(100% - 22px);
+    box-sizing: border-box;
+    background-color: #15151b;
+    border: none;
+    box-shadow: 4px 13px 15px 0px rgba(0, 0, 0, 0.3);
+    padding: 15px 7px;
+    border: 1px solid #282838;
+    border-radius: 50px;
+    color: #ccc;
+}
+
+button {
+    margin-bottom: 10px;
+    width: calc(100% - 22px);
+    box-sizing: border-box;
+    background-color: #1e1e27;
+    border: none;
+    box-shadow: 4px 13px 15px 0px rgba(0, 0, 0, 0.3);
+    padding: 15px 7px;
+    border: 1px solid #282838;
+    border-radius: 50px;
+    color: #ccc;
+    cursor: pointer;
+    transition: all;
+}
+button:hover {
+    box-shadow: 4px 10px 13px 0px rgba(0, 0, 0, 0.3);
+    background-color: #282834;
+}
+
+.message {
+    display: flex;
+    align-items: flex-start; /* Align items at the start */
+    margin-top: 10px; /* Space between messages */
+}
+
+.pfp {
+    width: 40px; /* Set width for the profile picture */
+    height: 40px; /* Set height for the profile picture */
+    border-radius: 50%; /* Make the profile picture round */
+    margin-right: 10px; /* Space between the image and the text */
+}
+
+.username {
+    font-weight: bold; /* Bold username */
+    margin-bottom: 0; /* Remove margin below the username */
+}
+
+.message-content {
+    display: block; /* Ensure the message content appears below the username */
+    margin-bottom: 5px; /* Space between the message and the time */
+    overflow-wrap: break-word;
+    max-width: 410px
+}
+
+.time {
+    font-size: 0.6em;
+    color: gray;
+    margin-left: 6px;
+}
+
+.shake {
+    display: inline-block; /* Ensures the shake animation applies correctly */
+    transition: transform 0.1s; /* Adjust duration as needed */
+}
